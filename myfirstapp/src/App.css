@@ -7,8 +7,13 @@
   pointer-events: none;
 }
 
+.App-image{
+  height: 100px;
+  width: 100px;
+}
+
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo, .App-image {
     animation: App-logo-spin infinite 20s linear;
   }
 }
