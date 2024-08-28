@@ -7,6 +7,8 @@ import {
   VideoCameraOutlined,
 } from '@ant-design/icons';
 import { Button, Layout, Menu, theme } from 'antd';
+import logo from '../assets/logo.png'
+
 const { Header, Sider, Content } = Layout;
 const AppLayout = () => {
   const [collapsed, setCollapsed] = useState(false);
@@ -14,12 +16,15 @@ const AppLayout = () => {
     token: { colorBgContainer, borderRadiusLG },
   } = theme.useToken();
   return (
-    <Layout>
+    <Layout style={{height: "100vh"}}>
       <Sider trigger={null} collapsible collapsed={collapsed}>
-        <div className="demo-logo-vertical" />
+        <div className="logo demo-logo-vertical">
+        {/* <h2 style={{color: "white"}}>Aliza</h2> */}
+        <img src={logo} style={{width:"100px"}}></img>
+        </div>
         <Menu
           theme="dark"
-          mode="inline"
+          mode="inline" 
           defaultSelectedKeys={['1']}
           items={[
             {
