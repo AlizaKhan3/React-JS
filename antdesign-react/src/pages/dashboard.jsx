@@ -2,7 +2,7 @@ import AppLayout from "../components/layout";
 // import AppNavbar from "../components/navbar";
 function Dashboard() {
     return (
-        <div>
+        <div className="main">
             {/* <AppNavbar>
       
       </AppNavbar> */}
