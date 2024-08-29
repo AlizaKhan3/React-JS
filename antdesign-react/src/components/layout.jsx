@@ -74,6 +74,7 @@ const AppLayout = ({children}) => {
           }}
         >
         {children}
+
         </Content>
       </Layout>
     </Layout>
