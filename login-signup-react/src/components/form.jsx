@@ -57,7 +57,7 @@ const AppBasicForm = () => (
       name="remember"
       valuePropName="checked"
       wrapperCol={{
-        offset: 8,
+        offset: 7,
         span: 16,
       }} 
     >
@@ -66,12 +66,12 @@ const AppBasicForm = () => (
 
     <Form.Item
       wrapperCol={{
-        offset: 8,
+        offset: 9,
         span: 16,
       }}
     >
       <Button type="primary" htmlType="submit">
-        Submit
+        Login
       </Button>
     </Form.Item>
   </Form>
