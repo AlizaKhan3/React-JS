@@ -1,5 +1,7 @@
 import React from 'react';
 import { Button, Checkbox, Form, Input } from 'antd';
+import { purple } from '@mui/material/colors';
+import PurePanel from 'antd/es/popover/PurePanel';
 
 const onFinish = (values) => {
   console.log('Success:', values);
@@ -12,13 +14,13 @@ const AppBasicForm = () => (
   <Form
     name="basic"
     labelCol={{
-      span: 8,
+      span: 7,
     }}
     wrapperCol={{
       span: 16,
     }}
     style={{
-      maxWidth: 600,
+      width: 400,
     }}
     initialValues={{
       remember: true,
@@ -57,7 +59,7 @@ const AppBasicForm = () => (
       name="remember"
       valuePropName="checked"
       wrapperCol={{
-        offset: 7,
+        offset: 2,
         span: 16,
       }} 
     >
@@ -66,11 +68,11 @@ const AppBasicForm = () => (
 
     <Form.Item
       wrapperCol={{
-        offset: 9,
+        offset: 11,
         span: 16,
       }}
     >
-      <Button type="primary" htmlType="submit">
+      <Button className="btnColor" type="primary" htmlType="submit">
         Login
       </Button>
     </Form.Item>
