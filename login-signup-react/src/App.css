@@ -1,18 +1,14 @@
-/* .container{
-  background-color: crimson;
-} */
-
 *{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
 h1{
   text-align: center;
 }
 
 .card{
-  width: fit-content;
   margin-top: 8rem;
   border: 2px solid palevioletred;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -29,4 +25,8 @@ h1{
   justify-content: center ;
   align-items: center;
   font-weight: 500;
+}
+
+.btnColor{
+  background-color: purple;
 }
