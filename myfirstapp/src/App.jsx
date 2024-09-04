@@ -1,8 +1,9 @@
 import logo from './logo.svg';
 import image from './assets/images/myimage.jpg'
 import './App.css';
-import { Header, Footer } from './components';
+import { Header, Footer } from '.';
 import Button from 'react-bootstrap/Button';
+import AppRouter from './router';
 
 
 // const full_name = "Khan"
@@ -73,17 +74,20 @@ import Button from 'react-bootstrap/Button';
 
 function App( ) {
   return(
-    <div>
-      {/* <h1>Header</h1> */}
-      <Header></Header>
-      <div>
-        <p>My content</p>
-        <Button variant="success">Success</Button>{' '}
-
-      </div>
-      <Footer></Footer>
+    <div style={{backgroundColor:'yellow'}}>
+      <AppRouter/>
     </div>
   )
 }
 
 export default App;
+
+// <div>
+    //   <Header></Header>
+    //   <div>
+    //     <p>My content</p>
+    //     <Button variant="success">Success</Button>{' '}
+
+    //   </div>
+    //   <Footer></Footer>
+    // </div>
