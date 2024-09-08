@@ -1,16 +1,17 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import Login from "../pages/login"
-import Home from "../pages/home"
-import Profile from "../pages/profile"
+import AppHome from "../pages/home"
+import Login from "../pages/login";
 import AppLayout from "../components/navbar"
+import MyProfile from "../pages/profile"
 
 const AppRouter = () => {
     return (
         <Router>
             <Routes>
-                <Route path="/" element={<Home />}/>
-                <Route path="/login" element={<Login />}/>
-                <Route path="/profile" element={<AppLayout><Profile/></AppLayout>}/>
+            <Route path="/" element={<Login />}/>
+
+                <Route path="/home" element={<AppHome />}/>
+                <Route path="/profile" element={<AppLayout><MyProfile/></AppLayout>}/>
             </Routes>
         </Router>
     )
