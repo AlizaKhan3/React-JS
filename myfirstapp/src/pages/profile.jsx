@@ -1,11 +1,9 @@
-import "../App.css" 
-
-const Profile = () => {
+const MyProfile = () => {
     return(
-        <div className="profile">
-            <h1>Profile Page</h1>
+        <div>
+            <h1>Login Page</h1>
         </div>
     )
 }
 
-export default Profile;
+export default MyProfile;
