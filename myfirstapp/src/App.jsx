@@ -3,7 +3,7 @@ import image from './assets/images/myimage.jpg'
 import './App.css';
 import { Header, Footer } from '.';
 import Button from 'react-bootstrap/Button';
-import AppRouter from './router';
+// import AppRouter from './router';
 
 
 // const full_name = "Khan"
@@ -74,7 +74,7 @@ import AppRouter from './router';
 
 function App( ) {
   return(
-    <div style={{backgroundColor:'yellow'}}>
+    <div>
       <AppRouter/>
     </div>
   )
